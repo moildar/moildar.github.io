@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="http://allfont.ru/allfont.css?fonts=open-sans-bold" rel="stylesheet" type="text/css" />
+    <link href="http://allfont.ru/allfont.css?fonts=open-sans-semibold" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<div class="container" data-tid='App'>
+    <div class="game-zone">
+        <div class="page1">
+
+            <div class="main-logo">
+                <img src="img/StartGame.png">
+            </div>
+
+            <h1 class="game-name"> Lybich Game </h1>
+
+            <button class="button button-start" data-tid="NewGame-startGame"> Начать игру </button>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="page2 visually-hidden">
+
+    <div class="information">
+        <button class="replay" data-tid="Menu-newGame"> Начать заново </button>
+        <p class="inf"> Очки: <span class="points" data-tid="Menu-scores">0</span></p>
+    </div>
+
+    <div class="playing-field" data-tid="Deck"></div>
+
+</div>
+
+<div class="page3 visually-hidden">
+    <div class="game-zone">
+        <div class="wraper">
+
+            <div class="end-logo">
+                <img src="img/EndGame.png">
+            </div>
+
+            <p class="congratulation"> Поздравляем! <br />
+            Количество выигранных поцелуев для Ильдарки <span class="result"> 0 </span> </p>
+
+            <button data-tid="EndGame-retryGame" class="button button-replay"> Еще раз </button>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/setup.js"> </script>
+
+</body>
+</html>

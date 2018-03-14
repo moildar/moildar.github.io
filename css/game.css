@@ -1,0 +1,58 @@
+
+.information {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.replay {
+    background: none;
+    border: none;
+
+    padding: 0;
+
+    opacity: 0.8;
+    font-family: 'Open Sans Semibold', Arial;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: -0.25px;
+}
+
+.playingField {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 102px;
+    height: 141.5px;
+
+    margin-bottom: 20px;
+
+    background-image: url("../img/back.gif");
+}
+
+.pair {
+    transition: 0.8s;
+    opacity: 0.2;
+    cursor: default;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: translateX(-5000%);
+    visibility: hidden;
+}
+
+div[data-condition='face'] {
+    transition: 0.2s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(0deg);
+}
+
+div[data-condition='shirt'] {
+    transition: 0.2s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(180deg);
+}

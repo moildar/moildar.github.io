@@ -1,0 +1,186 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    background-color: rgba(27, 110, 46,1);
+}
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.game-zone {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page1 {
+    width: 503px;
+    margin: 0 auto;
+
+
+    text-align: center;
+}
+
+
+.main-logo {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.game-name {
+    opacity: 0.85;
+    font-family: 'Open Sans Bold', Arial, sans-serif;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+
+    margin-bottom: 34px;
+}
+
+.button {
+    width: 144px;
+    height: 42px;
+
+    opacity: 0.85;
+    background: #FFFFFF;
+    border-radius: 4px;
+
+    font-family: 'Open Sans Bold', Arial, sans-serif;
+    font-size: 16px;
+    color: #1C7430;
+    letter-spacing: 0;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    background-image: -webkit-linear-gradient(top, #fff, #555);
+    background-image: -moz-linear-gradient(top, #fff, #555);
+    background-image: -o-linear-gradient(top, #fff, #555);
+    background-image: linear-gradient(to bottom, #fff, #555);
+}
+
+.button:active {
+    border-color: #1c1c1c;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.09);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.09);
+}
+
+
+
+
+.information {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.replay {
+    background: none;
+    border: none;
+
+    padding: 0;
+
+    opacity: 0.8;
+    font-family: 'Open Sans Semibold', Arial;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: -0.25px;
+}
+
+.playing-field {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 102px;
+    height: 141.5px;
+
+    margin-bottom: 20px;
+
+    background-image: url("../img/back.jpg");
+}
+
+.pair {
+    transition: 0.8s;
+    opacity: 0.2;
+    cursor: default;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: translateX(-5000%);
+    visibility: hidden;
+}
+
+.inf {
+    opacity: 0.8;
+    font-family: 'Open Sans Bold', Arial, sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+div[data-condition='face'] {
+    transition: 0.2s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(0deg);
+}
+
+div[data-condition='shirt'] {
+    transition: 0.2s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(180deg);
+
+    background-image: url(../img/back.jpg);
+}
+
+.page3 {
+    width: 516px;
+}
+
+.congratulation {
+    opacity: 0.85;
+    font-family:'Open Sans Bold', Arial, sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0.15px;
+    line-height: 35px;
+}
+
+.page3 img {
+    width: 516px;
+    height: auto;
+}
+
+@import url(http://allfont.ru/allfont.css?fonts=open-sans-bold);
+@import url(http://allfont.ru/allfont.css?fonts=open-sans-semibold);
+
+
+
