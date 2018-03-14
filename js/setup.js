@@ -186,9 +186,10 @@ function check (arr) {   /* проверяем пару открытых кар�
 
             }
 
-            if (musicC == 5) {
-                musicC = 0;
-            } else {
+            if (musicC == 4) {
+                musicC = 1;
+                var stope = true;
+                } elseif (!stope) {
                 musicC++;
             }
 
